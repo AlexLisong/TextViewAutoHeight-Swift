@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="TextViewAutoHeightDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h18-7c-n02" customClass="TextViewAutoHeight" customModule="TextViewAutoHeightDemo" customModuleProvider="target">
+                                <rect key="frame" x="10" y="20" width="580" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="n0o-hA-AYC"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ju2-lh-H3Q">
+                                <rect key="frame" x="207" y="100" width="186" height="125"/>
+                                <color key="backgroundColor" red="0.72549019607843135" green="1" blue="0.5267857142857143" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="186" id="Bhi-KH-tnB"/>
+                                    <constraint firstAttribute="height" constant="125" id="QJT-VS-7cJ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91764706370000004" green="1" blue="0.25490197539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="h18-7c-n02" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="60Z-Xq-g8T"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="h18-7c-n02" secondAttribute="trailing" constant="-6" id="Eln-Oz-pVH"/>
+                            <constraint firstItem="h18-7c-n02" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="GVC-Kv-zMA"/>
+                            <constraint firstItem="h18-7c-n02" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="RLZ-QJ-OT4"/>
+                            <constraint firstAttribute="centerX" secondItem="Ju2-lh-H3Q" secondAttribute="centerX" id="UpD-JI-Kca"/>
+                            <constraint firstItem="h18-7c-n02" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="Wat-Sp-UNY"/>
+                            <constraint firstItem="h18-7c-n02" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="aen-dx-dGw"/>
+                            <constraint firstItem="h18-7c-n02" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-6" id="gp3-Mw-bfx"/>
+                            <constraint firstItem="Ju2-lh-H3Q" firstAttribute="top" secondItem="h18-7c-n02" secondAttribute="bottom" constant="20" id="m9e-G0-FNk"/>
+                            <constraint firstItem="h18-7c-n02" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="w1W-OX-mwm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="h18-7c-n02" id="ci2-tI-cif"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
